@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: calc(14px + 0.5vw);
+}
+
+/* Header responsive */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header img{
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+section:hover{
+    filter: invert(1);    
+}
+
+/* Liste de compétences */
+#competences ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#competences li {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    list-style-type: none;
+}
+
+/* Expériences */
+#experience article {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#experience p {
+    padding-left: 1rem;
+}
+
+#experience li {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+
+input{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #competences ul {
+        flex-direction: column;
+    }
+
+    #competences li {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: calc(14px + 0.5vw);
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
+    html {
+    filter: invert(100%);
+    }
+} */
